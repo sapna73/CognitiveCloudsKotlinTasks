@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DialogActivity">
+
+    <Button
+        android:id="@+id/dialog_Btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Simple dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#ffd500 "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Alert Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#ffd500 "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Single Choice Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#33B2FF "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Multi Choice Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#F633FF "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Progress Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FFAF33 "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Date Picker Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#334FFF "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Time Picker Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FF337D "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Bottom Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FF33CE "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Custom Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#DAF7A6 "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Circular Progress Dialog"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FF5733 "
+        android:textColor="@color/white"/>
+
+</LinearLayout>
