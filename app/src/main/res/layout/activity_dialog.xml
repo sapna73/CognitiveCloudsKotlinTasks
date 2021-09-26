@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DialogActivity">
+    tools:context=".activities.DialogActivity">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/dialog_Btn11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Login Screen"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FFAF33 "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_Btn101"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Recycler View"
+        android:layout_margin="15dp"
+        android:backgroundTint="#334FFF "
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/dialog_Btn1"
@@ -108,3 +137,4 @@
         android:textColor="@color/white"/>
 
 </LinearLayout>
+</ScrollView>

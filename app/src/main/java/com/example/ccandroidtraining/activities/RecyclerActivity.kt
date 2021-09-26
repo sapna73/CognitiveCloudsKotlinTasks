@@ -1,7 +1,8 @@
-package com.example.ccandroidtraining
+package com.example.ccandroidtraining.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.ccandroidtraining.R
 
 class RecyclerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

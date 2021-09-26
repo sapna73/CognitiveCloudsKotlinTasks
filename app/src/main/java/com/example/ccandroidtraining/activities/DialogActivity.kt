@@ -1,10 +1,12 @@
-package com.example.ccandroidtraining
+package com.example.ccandroidtraining.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.example.ccandroidtraining.R
 
 class DialogActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +23,8 @@ class DialogActivity : AppCompatActivity() {
         var buttonCustomDialog = findViewById<Button>(R.id.dialog_Btn8)
         var buttonTimePicker = findViewById<Button>(R.id.dialog_Btn6)
         var buttonCircular = findViewById<Button>(R.id.dialog_Btn9)
+        var buttonLogin = findViewById<Button>(R.id.dialog_Btn11)
+        var buttonRecyclerView = findViewById<Button>(R.id.dialog_Btn101)
 
         buttonAlert.setOnClickListener() {
             val builder = AlertDialog.Builder(this)
@@ -87,6 +91,18 @@ class DialogActivity : AppCompatActivity() {
 
         buttonCircular.setOnClickListener(){
             Toast.makeText(applicationContext, "Circular Dialog", Toast.LENGTH_LONG).show()
+        }
+
+        buttonLogin.setOnClickListener(){
+            intent = Intent(this, LoginScreen::class.java)
+            startActivity(intent)
+            Toast.makeText(applicationContext, "Login Screen Clicked", Toast.LENGTH_LONG).show()
+        }
+
+        buttonRecyclerView.setOnClickListener(){
+            intent = Intent(this, RecyclerActivity::class.java)
+            startActivity(intent)
+            Toast.makeText(applicationContext, "Recycler View", Toast.LENGTH_LONG).show()
         }
     }
 }
