@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/drawable/button_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/drawable/button_oval_background.xml" value="0.2203125" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_login_screen.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
@@ -10,6 +12,7 @@
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_uiwidgets.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_uiwidgets2.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/items_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/layout_background.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

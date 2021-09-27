@@ -24,10 +24,10 @@ class RecyclerAdapter (private val moviesList: List<ItemsModel>) : RecyclerView.
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val Movies = moviesList[position]
-        holder.title.text = Movies.title
-        holder.genre.text = Movies.genre
-        holder.year.text = Movies.year
+//        val Movies = moviesList[position]
+//        holder.title.text = Movies.title
+//        holder.genre.text = Movies.genre
+//        holder.year.text = Movies.year
     }
 
     override fun getItemCount(): Int {
