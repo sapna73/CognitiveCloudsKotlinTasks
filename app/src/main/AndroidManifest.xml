@@ -11,6 +11,7 @@
         android:theme="@style/Theme.CCAndroidTraining">
         <activity
             android:name=".activities.LoginScreen"
+            android:theme="@style/LoginScreen"
             android:exported="true" />
         <activity
             android:name=".activities.UIWidgets"
