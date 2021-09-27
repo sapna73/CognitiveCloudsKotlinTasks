@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/button_background"
     tools:context=".activities.LoginScreen">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         android:id="@+id/card1"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="8dp"
@@ -28,11 +27,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_user_name"
-            android:hint="User Name"
+            android:hint="Username"
             android:textColor="#6bfff7"
             android:textColorHint="#000000"
             android:textAlignment="center"
@@ -53,11 +53,12 @@
             android:layout_height="50dp"/>
 
             <TextView
-                android:id="@+id/btnFrogetPassword"
+                android:id="@+id/tvForgetPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Forget Password?"
-                android:textSize="12sp"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"
                 android:layout_marginLeft="100dp"
                 android:layout_gravity="center" />
 
@@ -66,8 +67,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:background="@drawable/button_background"
                 android:text="Login"/>
+
+            <TextView
+                android:id="@+id/tvSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? Signup"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
