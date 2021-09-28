@@ -42,7 +42,7 @@ class LoginScreen : AppCompatActivity() {
         }
 
         tvSignUp.setOnClickListener(){
-            intent = Intent(this, UIWidgets::class.java)
+            intent = Intent(this, SignInScreen::class.java)
             startActivity(intent)
         }
 

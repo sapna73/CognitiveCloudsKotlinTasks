@@ -10,9 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CCAndroidTraining">
         <activity
+            android:name=".activities.SignInScreen"
+            android:exported="true" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login" />
+        <activity
             android:name=".activities.ForgotPassword"
             android:exported="true"
-            android:parentActivityName=".activities.LoginScreen"/>
+            android:parentActivityName=".activities.LoginScreen" />
         <activity
             android:name=".activities.MainActivity"
             android:exported="true"
@@ -20,15 +27,15 @@
         <activity
             android:name=".activities.UIWidgets"
             android:exported="true"
-            android:parentActivityName=".activities.MainActivity"/>
+            android:parentActivityName=".activities.MainActivity" />
         <activity
             android:name=".activities.RecyclerActivity"
             android:exported="true"
-            android:parentActivityName=".activities.DialogActivity"/>
+            android:parentActivityName=".activities.DialogActivity" />
         <activity
             android:name=".activities.DialogActivity"
             android:exported="true"
-            android:parentActivityName=".activities.UIWidgets"/>
+            android:parentActivityName=".activities.UIWidgets" />
         <activity
             android:name=".activities.LoginScreen"
             android:exported="true"
