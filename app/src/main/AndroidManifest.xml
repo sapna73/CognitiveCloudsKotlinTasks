@@ -12,7 +12,6 @@
         <activity
             android:name=".activities.AuthNavigationActivity"
             android:exported="true"
-            android:label="@string/title_activity_auth_navigation"
             android:theme="@style/Theme.CCAndroidTraining.NoActionBar" />
         <activity
             android:name=".activities.ForgotPassword"

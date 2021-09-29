@@ -26,6 +26,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="NavActivity" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
     <style name="Theme.CCAndroidTraining.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.CCAndroidTraining.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

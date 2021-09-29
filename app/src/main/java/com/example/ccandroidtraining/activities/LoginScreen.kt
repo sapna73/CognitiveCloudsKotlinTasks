@@ -22,7 +22,7 @@ class LoginScreen : AppCompatActivity() {
         var linearLayout = findViewById<LinearLayout>(R.id.linearLogin)
 
         buttonLogin.setOnClickListener(){
-            intent = Intent(this, UIWidgets::class.java)
+            intent = Intent(this, AuthNavigationActivity::class.java)
             startActivity(intent)
         }
 

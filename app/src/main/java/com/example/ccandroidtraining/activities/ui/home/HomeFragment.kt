@@ -8,8 +8,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.ccandroidtraining.activities.R
-import com.example.ccandroidtraining.activities.databinding.FragmentHomeBinding
+//import com.example.ccandroidtraining.activities.R
+//import com.example.ccandroidtraining.activities.databinding.FragmentHomeBinding
+import com.example.ccandroidtraining.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
