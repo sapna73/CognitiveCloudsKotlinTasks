@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CCAndroidTraining">
         <activity
+            android:name=".activities.BottomNavigation"
+            android:exported="true"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
             android:name=".activities.AuthNavigationActivity"
             android:exported="true"
             android:theme="@style/Theme.CCAndroidTraining.NoActionBar" />
