@@ -1,5 +1,6 @@
 package com.example.ccandroidtraining.activities.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.ccandroidtraining.activities.UIWidgets
 //import com.example.ccandroidtraining.activities.R
 //import com.example.ccandroidtraining.activities.databinding.FragmentHomeBinding
 import com.example.ccandroidtraining.databinding.FragmentHomeBinding
@@ -33,9 +35,15 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
+        val textViewClick: TextView = binding.hereFragment1
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
+
+        textViewClick.setOnClickListener(){
+            val intent = Intent (getActivity(), UIWidgets::class.java)
+            getActivity()?.startActivity(intent)
+        }
         return root
     }
 
