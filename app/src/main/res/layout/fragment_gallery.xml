@@ -8,17 +8,6 @@
     android:orientation="vertical"
     tools:context=".activities.ui.gallery.GalleryFragment">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/et_fragment2"
-        android:hint="Type Something"
-        android:textColor="#6bfff7"
-        android:textColorHint="#000000"
-        android:textAlignment="center"
-        android:background="@drawable/login_edit_background"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/text_gallery"
         android:layout_width="match_parent"
@@ -30,20 +19,9 @@
         android:textSize="20sp"
         android:textColor="@color/purple_200"
         android:textStyle="bold"
-        android:text="Get data from fragment 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnSendData11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:background="@drawable/button_background"
-        android:text="Send Data"
-        tools:ignore="MissingConstraints" />
 
 </LinearLayout>
