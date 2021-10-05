@@ -13,7 +13,8 @@
             android:name=".activities.TabActivity"
             android:exported="true"
             android:label="@string/title_activity_tab"
-            android:theme="@style/Theme.CCAndroidTraining.NoActionBar" />
+            android:theme="@style/Theme.CCAndroidTraining.NoActionBar"
+            android:parentActivityName=".activities.LoginScreen"/>
         <activity
             android:name=".activities.BottomNavigation"
             android:exported="true"
