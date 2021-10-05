@@ -1,7 +1,4 @@
 # CognitiveCloudsKotlinTasks
 ## Activity Lifecycle
 ### UI Widgets
-#### Dilogs
-##### Recycler view 
-###### Login Screen
-####### https://github.com/sapna73/CognitiveCloudsKotlinTasks/tree/login_screen
+#### https://share.vidyard.com/watch/VUmnT7PVHS2x3Y9XVqAYu5?
