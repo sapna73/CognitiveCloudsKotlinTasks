@@ -3,10 +3,7 @@ package com.example.ccandroidtraining.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import com.example.ccandroidtraining.R
 
 class LoginScreen : AppCompatActivity() {
@@ -22,6 +19,10 @@ class LoginScreen : AppCompatActivity() {
         var linearLayout = findViewById<LinearLayout>(R.id.linearLogin)
 
         buttonLogin.setOnClickListener(){
+            val userName = editTextName.text;
+            val password = editTextPassword.text;
+            Toast.makeText(this@LoginScreen, userName, Toast.LENGTH_LONG).show()
+            
             intent = Intent(this, UIWidgets::class.java)
             startActivity(intent)
         }
