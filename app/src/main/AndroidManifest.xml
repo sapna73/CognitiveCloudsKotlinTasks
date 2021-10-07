@@ -13,10 +13,11 @@
             android:name=".activities.ListViewExample"
             android:exported="true"
             android:label="ListView"
-            android:parentActivityName=".activities.UIWidgets"/>
+            android:parentActivityName=".activities.DialogActivity"/>
         <activity
             android:name=".activities.SignInScreen"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/action_sign_in" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="true"

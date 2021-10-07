@@ -28,10 +28,19 @@ class RecyclerAdapter(private val mList: List<ItemsModel>) : RecyclerView.Adapte
 
         // sets the image to the imageview from our itemHolder class
         holder.imageView.setImageResource(ItemsViewModel.image)
+        holder.imageView.setOnClickListener(){
+//            val position = holder.adapterPosition
+//            val model = mList[position]
+//            mOnProductClickListener.onDelete(model)
+        }
 
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
+    }
 
+    fun deleteItem(position: Int){
+//        mList.removeAt(position)
+//        notifyDataSetChanged()
     }
 
     // return the number of the items in the list

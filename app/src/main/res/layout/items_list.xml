@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="15dp"
-            android:text="Item"
+            android:text="Recycler items"
+            android:textColor="@color/purple_200"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -27,7 +28,7 @@
             android:id="@+id/imageview"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="200dp"
+            android:layout_marginLeft="120dp"
             android:backgroundTint="@color/purple_200"
             android:src="@drawable/ic_baseline_delete_24"/>
 
