@@ -27,10 +27,12 @@
         <activity
             android:name=".activities.UIWidgets"
             android:exported="true"
+            android:label="@string/title_ui_widgets"
             android:parentActivityName=".activities.MainActivity" />
         <activity
             android:name=".activities.RecyclerActivity"
             android:exported="true"
+            android:label="@string/title_recycler"
             android:parentActivityName=".activities.DialogActivity" />
         <activity
             android:name=".activities.DialogActivity"
