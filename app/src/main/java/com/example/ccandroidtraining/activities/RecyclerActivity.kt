@@ -25,7 +25,7 @@ class RecyclerActivity : AppCompatActivity() {
             // This loop will create 20 Views containing
             // the image with the count of view
             for (i in 1..20) {
-                data.add(ItemsModel(R.drawable.ic_baseline_delete_24, "Item " + i))
+                data.add(ItemsModel(R.drawable.ic_baseline_delete_24, "Item" + i))
             }
 
             // This will pass the ArrayList to our Adapter
