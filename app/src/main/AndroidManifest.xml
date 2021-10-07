@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CCAndroidTraining">
         <activity
+            android:name=".activities.ListViewExample"
+            android:exported="true"
+            android:label="ListView"
+            android:parentActivityName=".activities.UIWidgets"/>
+        <activity
             android:name=".activities.SignInScreen"
             android:exported="true" />
         <activity
