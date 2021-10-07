@@ -14,6 +14,8 @@ import com.example.ccandroidtraining.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
 
+    var displayMessage: String? = ""
+
     private lateinit var dashboardViewModel: DashboardViewModel
     private var _binding: FragmentDashboardBinding? = null
 
@@ -30,9 +32,11 @@ class DashboardFragment : Fragment() {
             ViewModelProvider(this).get(DashboardViewModel::class.java)
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
         val textView: TextView = binding.textDashboard
+        val root: View = binding.root
+        displayMessage = arguments?.getString("messageInput")
+        textView.text = displayMessage
+
         dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

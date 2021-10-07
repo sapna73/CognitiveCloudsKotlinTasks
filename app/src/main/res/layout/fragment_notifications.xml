@@ -22,10 +22,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/et_fragment2"
+    <EditText
+        android:id="@+id/etFragment2"
         android:hint="Type Something"
-        android:textColor="#6bfff7"
+        android:textColor="@color/black"
         android:textColorHint="#000000"
         android:textAlignment="center"
         android:background="@drawable/login_edit_background"

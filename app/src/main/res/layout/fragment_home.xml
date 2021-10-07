@@ -17,10 +17,10 @@
     <EditText
         android:id="@+id/etUserName"
         android:hint="Type Something"
-        android:textColor="#6bfff7"
+        android:textColor="@color/black"
         android:textColorHint="#000000"
         android:textAlignment="center"
-        android:background="@drawable/button_background"
+        android:background="@drawable/login_edit_background"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
 

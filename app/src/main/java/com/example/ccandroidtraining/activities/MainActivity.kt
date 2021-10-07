@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         //It will show toast message on screen
         //onStart will be invoked
-        val toast = Toast.makeText(applicationContext, "onStart called", Toast.LENGTH_LONG).show()
+        val toast = Toast.makeText(applicationContext, "onStart called", Toast.LENGTH_LONG)
+        toast.show()
     }
 
     override fun onRestart() {
