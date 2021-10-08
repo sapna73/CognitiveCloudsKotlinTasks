@@ -23,18 +23,16 @@ class LoginScreen : AppCompatActivity() {
             val password = editTextPassword.text;
             Toast.makeText(this@LoginScreen, userName, Toast.LENGTH_LONG).show()
 
-            intent = Intent(this, BottomNavigation::class.java)
+            intent = Intent(this, BottomNavExample::class.java)
             startActivity(intent)
         }
 
         editTextName.setOnClickListener(){
-            intent = Intent(this, UIWidgets::class.java)
-            startActivity(intent)
+
         }
 
         editTextPassword.setOnClickListener(){
-            intent = Intent(this, UIWidgets::class.java)
-            startActivity(intent)
+
         }
 
         tvForget.setOnClickListener(){
@@ -43,7 +41,7 @@ class LoginScreen : AppCompatActivity() {
         }
 
         tvSignUp.setOnClickListener(){
-            intent = Intent(this, TabActivity::class.java)
+            intent = Intent(this, SignInScreen::class.java)
             startActivity(intent)
         }
 

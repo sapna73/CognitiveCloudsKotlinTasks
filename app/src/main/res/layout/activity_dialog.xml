@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Login Screen"
+        android:text="List View"
         android:layout_margin="15dp"
         android:backgroundTint="#FFAF33 "
         android:textColor="@color/white"/>

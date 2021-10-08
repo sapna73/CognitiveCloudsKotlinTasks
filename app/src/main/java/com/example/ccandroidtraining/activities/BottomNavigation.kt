@@ -20,11 +20,11 @@ import com.example.ccandroidtraining.activities.ui.notifications.NotificationsFr
 //import com.example.ccandroidtraining.activities.databinding.ActivityBottomNavigationBinding
 import com.example.ccandroidtraining.databinding.ActivityBottomNavigationBinding
 
-class BottomNavigation : AppCompatActivity(), PassData {
+class BottomNavigation : AppCompatActivity() {
 
-    val homeFragment = HomeFragment()
-    val searchFragment = DashboardFragment()
-    val ordersFragment = NotificationsFragment()
+    val homeFragment = HomeFragment()//Fragment 1
+    val searchFragment = DashboardFragment() //Fragment 2
+    val ordersFragment = NotificationsFragment() //Fragment 3
 
     public lateinit var binding: ActivityBottomNavigationBinding
 
@@ -37,15 +37,6 @@ class BottomNavigation : AppCompatActivity(), PassData {
 
         val navView: BottomNavigationView = binding.navView
 
-        navView.setOnNavigationItemSelectedListener {
-            when(it.itemId){
-                R.id.navigation_home->replaceFragment(homeFragment)
-                R.id.navigation_dashboard->replaceFragment(searchFragment)
-                R.id.navigation_notifications->replaceFragment(ordersFragment)
-            }
-            true
-        }
-
         val navController = findNavController(R.id.nav_host_fragment_activity_bottom_navigation)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -57,11 +48,11 @@ class BottomNavigation : AppCompatActivity(), PassData {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        replaceFragment(homeFragment)
+        replaceFragment(HomeFragment())
     }
 
     // Extension function to replace fragment
-    public fun replaceFragment(fragment: Fragment) {
+    fun AppCompatActivity.replaceFragment(fragment:Fragment){
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()
         transaction.replace(R.id.container,fragment)
@@ -81,15 +72,12 @@ class BottomNavigation : AppCompatActivity(), PassData {
                 intent = Intent(this, TabActivity::class.java)
                 startActivity(intent)
             }
+            R.id.action_notification->{
+                intent = Intent(this, UIWidgets::class.java)
+                startActivity(intent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
 
-    override fun passData(editTextInput: String) {
-       val bundle = Bundle()
-        bundle.putString("messageInput", editTextInput)
-        homeFragment.arguments = bundle
-
-        val transaction: Int = supportFragmentManager.beginTransaction().replace(R.id.container, searchFragment).commit()
-    }
 }

@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -29,7 +30,6 @@ class HomeFragment : Fragment(), PassData {
     val searchFragment = DashboardFragment()
     val ordersFragment = NotificationsFragment()
     val editTextInput: String = ""
-    val bottomNav = BottomNavigation()
 
     private lateinit var passData: PassData
     private lateinit var homeViewModel: HomeViewModel
@@ -48,6 +48,7 @@ class HomeFragment : Fragment(), PassData {
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+      
         val buttonSend: Button = binding.btnSendData
         val editText: EditText = binding.etUserName
 //        passData = activity as PassData
@@ -64,11 +65,12 @@ class HomeFragment : Fragment(), PassData {
 
         // Replace fragment
         buttonSend.setOnClickListener {
+            val context = activity as AppCompatActivity
             // Pass data to fragment
             val bundle = Bundle()
             bundle.putString("messageInput", editTextInput)
             searchFragment.arguments = bundle
-//            bottomNav.replaceFragment(searchFragment)
+            context.replaceFragment(searchFragment)
             val toast = Toast.makeText(context, "Home Fragment Button", Toast.LENGTH_LONG)
             toast.show()
         }
@@ -98,4 +100,8 @@ class HomeFragment : Fragment(), PassData {
         super.onDestroyView()
         _binding = null
     }
+}
+
+private fun AppCompatActivity.replaceFragment(searchFragment: DashboardFragment) {
+
 }

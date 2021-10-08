@@ -11,12 +11,18 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_tab_activity">Tab Activity</string>
     <string name="action_notification">Notification</string>
+    <string name="action_widgets">Widgets</string>
+    <string name="action_nav_side_drawer">Side Navigation</string>
     <string name="nav_name">Cognitive Clouds</string>
     <string name="action_sub_title">Bangalore</string>
+    <string name="prompt_email">UserName</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="action_sign_in_short">Sign in</string>
 
-    <string name="menu_home">Fragment One</string>
-    <string name="menu_gallery">Fragment Two</string>
-    <string name="menu_slideshow">Fragment Three</string>
+    <string name="menu_home">Home Fragment</string>
+    <string name="menu_gallery">Gallery Fragment</string>
+    <string name="menu_slideshow">Slideshow Fragment</string>
     <string name="title_activity_bottom_navigation">BottomNavigation</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Search</string>
@@ -25,4 +31,8 @@
     <string name="tab_text_1">Chats</string>
     <string name="tab_text_2">Status</string>
     <string name="tab_text_3">Call</string>
+    <string name="title_recycler">Recycler Activity</string>
+    <string name="title_list_view">List View Activity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

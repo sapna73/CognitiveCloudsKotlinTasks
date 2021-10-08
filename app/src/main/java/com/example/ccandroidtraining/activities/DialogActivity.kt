@@ -94,7 +94,7 @@ class DialogActivity : AppCompatActivity() {
         }
 
         buttonLogin.setOnClickListener(){
-            intent = Intent(this, LoginScreen::class.java)
+            intent = Intent(this, ListViewExample::class.java)
             startActivity(intent)
             Toast.makeText(applicationContext, "Login Screen Clicked", Toast.LENGTH_LONG).show()
         }
