@@ -19,7 +19,8 @@
             android:parentActivityName=".activities.DialogActivity" />
         <activity
             android:name=".activities.BottomNavExample"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Bottom Navigation"/>
         <activity
             android:name=".activities.TabActivity"
             android:exported="true"

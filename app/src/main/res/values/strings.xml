@@ -27,6 +27,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Search</string>
     <string name="title_notifications">Orders</string>
+    <string name="title_profile">Profile</string>
     <string name="title_activity_tab">TabActivity</string>
     <string name="tab_text_1">Chats</string>
     <string name="tab_text_2">Status</string>
