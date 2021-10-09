@@ -48,7 +48,7 @@ class FirstFragment : Fragment() {
             val args = Bundle()
             // Send string data as key value format
             args.putString("color","#FFFF00")
-            args.putString("key1", "message from 1")
+            args.putString("key1", textView.text.toString())
             val fragment = SecondFragment()
             fragment.arguments = args
 

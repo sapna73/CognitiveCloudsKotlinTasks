@@ -3,18 +3,64 @@ package com.example.ccandroidtraining.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.ccandroidtraining.R
 import com.example.ccandroidtraining.fragments.FirstFragment
+import com.example.ccandroidtraining.fragments.SecondFragment
+import com.example.ccandroidtraining.fragments.ThirdFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BottomNavExample : AppCompatActivity() {
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_bottom_nav_example)
-        replaceFragment(FirstFragment())
+//        val navView: BottomNavigationView = binding.navView
+
+        val navController = findNavController(R.id.nav_host_fragment_activity_bottom_navigation1)
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigateBottomView)
+
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        bottomNavigationView.setupWithNavController(navController)
+
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when(item.itemId){
+                R.id.navigation_home->{
+                    replaceFragment(FirstFragment())
+                    Log.d("TAG", "First fragment.........")
+                    true
+
+                }
+                R.id.navigation_dashboard->{
+                    replaceFragment(SecondFragment())
+                    Log.d("TAG", "second fragment.........")
+                    true
+
+                }
+                R.id.navigation_notifications->{
+                    replaceFragment(ThirdFragment())
+                    Log.d("TAG", "third... fragment.........")
+                    true
+
+                }
+            }
+            false
+        }
+//        replaceFragment(FirstFragment())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

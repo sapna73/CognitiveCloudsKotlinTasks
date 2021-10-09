@@ -27,6 +27,7 @@
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_tab.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_uiwidgets.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_uiwidgets2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/activity_view_pager_slider.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/app_bar_auth_navigation.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/content_auth_navigation.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
@@ -37,8 +38,10 @@
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/fragment_tab.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/fragment_third.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/item_row_list_view.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/items_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/items_view_pager_slides.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/layout_background.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/layout/nav_header_auth_navigation.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Desktop/KotlinGit/CCAndroidTraining/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />

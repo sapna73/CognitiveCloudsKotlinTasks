@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.example.ccandroidtraining.R
 
 class ThirdFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         arguments?.let {
 
         }
@@ -21,7 +23,18 @@ class ThirdFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third, container, false)
+        val view = inflater.inflate(R.layout.fragment_third, container, false)
+
+        val textViewThirdFrag: TextView = view.findViewById(R.id.textViewThird)
+
+        val string = arguments?.getString("name")
+        string?.let {
+
+            textViewThirdFrag.setText(string)
+//            textView.setText("message from 1")
+        }
+
+        return view
     }
 
     companion object {

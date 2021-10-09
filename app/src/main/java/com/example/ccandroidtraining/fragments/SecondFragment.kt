@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ccandroidtraining.R
@@ -29,6 +30,7 @@ class SecondFragment : Fragment() {
         val context = activity as AppCompatActivity
         val btnNavigate: Button = view.findViewById(R.id.btnNavigate)
         val textView: TextView = view.findViewById(R.id.textView)
+        val editTextSecond: EditText = view.findViewById(R.id.textViewSecond)
 
         // Receive the data from caller fragment/activity
         val color = arguments?.getString("color")
@@ -37,16 +39,18 @@ class SecondFragment : Fragment() {
             textView.setBackgroundColor(Color.parseColor(it))
         }
         string?.let {
-            textView.setText("message from 1")
+
+            textView.setText(string)
+//            textView.setText("message from 1")
         }
 
         // Replace fragment
         btnNavigate.setOnClickListener {
-            val name = "Jenny Jones"
-            val age = 25
+//            val name = "Jenny Jones"
+//            val age = 25
             val bundle = Bundle()
-            bundle.putString("name",name)
-            bundle.putInt("age",age)
+            bundle.putString("name", string + editTextSecond.text.toString())
+//            bundle.putInt("age",age)
             val fragment = FirstFragment()
             fragment.arguments = bundle
 

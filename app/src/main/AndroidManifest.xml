@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CCAndroidTraining">
         <activity
+            android:name=".activities.ViewPagerSlider"
+            android:exported="true" />
+        <activity
             android:name=".activities.SignInScreen"
             android:exported="true" />
         <activity
@@ -20,7 +23,7 @@
         <activity
             android:name=".activities.BottomNavExample"
             android:exported="true"
-            android:label="Bottom Navigation"/>
+            android:label="Bottom Navigation" />
         <activity
             android:name=".activities.TabActivity"
             android:exported="true"
