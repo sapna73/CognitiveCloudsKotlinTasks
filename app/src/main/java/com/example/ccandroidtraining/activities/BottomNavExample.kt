@@ -24,7 +24,6 @@ class BottomNavExample : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_bottom_nav_example)
-//        val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_bottom_navigation1)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigateBottomView)
@@ -60,7 +59,6 @@ class BottomNavExample : AppCompatActivity() {
             }
             false
         }
-//        replaceFragment(FirstFragment())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -81,6 +79,10 @@ class BottomNavExample : AppCompatActivity() {
             }
             R.id.action_nav_drawer->{
                 intent = Intent(this, AuthNavigationActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.action_view_slider->{
+                intent = Intent(this, ViewPagerSlider::class.java)
                 startActivity(intent)
             }
         }

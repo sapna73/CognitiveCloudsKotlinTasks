@@ -92,81 +92,33 @@ class ViewPagerSlider : AppCompatActivity() {
             val textView1 = rootView.findViewById<TextView>(R.id.descriptionTv)
             when(arguments?.getInt(ARG_SECTION_NUMBER)){
                 1->{
-                    titletext.text = "Title One"
+                    titletext.text = "I'm Monkey"
                     imageView.setImageResource(R.drawable.vp_image1)
-                    textView1.text = "description"
+                    textView1.text = "Jump everywhere"
                 }
                 2->{
-                    titletext.text = "Title One"
+                    titletext.text = "I'm Eagle"
                     imageView.setImageResource(R.drawable.vp_image2)
-                    textView1.text = "description"
+                    textView1.text = "Fly high"
                 }
                 3->{
-                    titletext.text = "Title One"
+                    titletext.text = "I'm Dinosaur"
                     imageView.setImageResource(R.drawable.vp_image3)
-                    textView1.text = "description"
+                    textView1.text = "Forset Friends "
                 }
                 4->{
-                    titletext.text = "Title One"
+                    titletext.text = "I'm Panda"
                     imageView.setImageResource(R.drawable.vp_image4)
-                    textView1.text = "description"
+                    textView1.text = "Lazy"
                 }
             }
-
-//            if (requireArguments().getInt(ARG_SECTION_NUMBER) == 1){
-//                //set title to title_tv
-//                rootView.titleTv.text = "Title One"
-//                //set image to image_iv
-//                rootView.vpImg1.setImageResource(R.drawable.vp_image1)
-//                //set description to description_tv
-//                rootView.descriptionTv.text = "The long description of the Title One"
-//            }
-//            if (requireArguments().getInt(ARG_SECTION_NUMBER) == 2){
-//                //set title to title_tv
-//                rootView.titleTv.text = "Title Two"
-//                //set image to image_iv
-//                rootView.vpImg1.setImageResource(R.drawable.vp_image2)
-//                //set description to description_tv
-//                rootView.descriptionTv.text = "The long description of the Title Two"
-//            }
-//            if (requireArguments().getInt(ARG_SECTION_NUMBER) == 3){
-//                //set title to title_tv
-//                rootView.titleTv.text = "Title Three"
-//                //set image to image_iv
-//                rootView.vpImg1.setImageResource(R.drawable.vp_image3)
-//                //set description to description_tv
-//                rootView.descriptionTv.text = "The long description of the Title Three"
-//            }
-//            if (requireArguments().getInt(ARG_SECTION_NUMBER) == 4){
-//                //set title to title_tv
-//                rootView.titleTv.text = "Title Four"
-//                //set image to image_iv
-//                rootView.vpImg1.setImageResource(R.drawable.vp_image4)
-//                //set description to description_tv
-//                rootView.descriptionTv.text = "The long description of the Title Four"
-//            }
-//            if (requireArguments().getInt(ARG_SECTION_NUMBER) == 5){
-//                //set title to title_tv
-//                rootView.titleTv.text = "Title Five"
-//                //set image to image_iv
-//                rootView.vpImg1.setImageResource(R.drawable.vp_image5)
-//                //set description to description_tv
-//                rootView.descriptionTv.text = "The long description of the Title Five"
-//            }
             return rootView
         }
 
         companion object {
-            /**
-             * The fragment argument representing the section number for this
-             * fragment.
-             */
+
             private val ARG_SECTION_NUMBER = "section_number"
 
-            /**
-             * Returns a new instance of this fragment for the given section
-             * number.
-             */
             fun newInstance(sectionNumber: Int): PlaceholderFragment {
                 val fragment = PlaceholderFragment()
                 val args = Bundle()

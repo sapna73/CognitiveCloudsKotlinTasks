@@ -31,7 +31,7 @@ class ThirdFragment : Fragment() {
         string?.let {
 
             textViewThirdFrag.setText(string)
-//            textView.setText("message from 1")
+
         }
 
         return view

@@ -39,18 +39,13 @@ class SecondFragment : Fragment() {
             textView.setBackgroundColor(Color.parseColor(it))
         }
         string?.let {
-
             textView.setText(string)
-//            textView.setText("message from 1")
         }
 
         // Replace fragment
         btnNavigate.setOnClickListener {
-//            val name = "Jenny Jones"
-//            val age = 25
             val bundle = Bundle()
-            bundle.putString("name", string + editTextSecond.text.toString())
-//            bundle.putInt("age",age)
+            bundle.putString("name", string + " " + editTextSecond.text.toString())
             val fragment = FirstFragment()
             fragment.arguments = bundle
 

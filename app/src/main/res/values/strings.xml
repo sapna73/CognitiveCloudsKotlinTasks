@@ -13,6 +13,7 @@
     <string name="action_notification">Notification</string>
     <string name="action_widgets">Widgets</string>
     <string name="action_nav_side_drawer">Side Navigation</string>
+    <string name="action_img_slider">View Image Slider</string>
     <string name="nav_name">Cognitive Clouds</string>
     <string name="action_sub_title">Bangalore</string>
     <string name="prompt_email">UserName</string>

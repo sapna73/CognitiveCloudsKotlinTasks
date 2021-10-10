@@ -38,9 +38,9 @@ class FirstFragment : Fragment() {
             textView.append("\nName: $name")
         }
 
-        age?.let {
-            textView.append("\nAge: $it")
-        }
+//        age?.let {
+//            textView.append("\nAge: $it")
+//        }
 
         // Replace fragment
         btnNavigate.setOnClickListener {
