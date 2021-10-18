@@ -24,4 +24,10 @@
         android:orderInCategory="100"
         android:title="@string/action_img_slider"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_Maps"
+        android:orderInCategory="100"
+        android:title="@string/maps"
+        app:showAsAction="never" />
 </menu>

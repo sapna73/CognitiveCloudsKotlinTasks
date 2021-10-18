@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -62,9 +63,10 @@ class BottomNavExample : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.auth_navigation, menu)
+        // Inflate the menu; this adds ite ms to the action bar if it is present.
+       menuInflater.inflate(R.menu.auth_navigation, menu)
         return true
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -84,6 +86,13 @@ class BottomNavExample : AppCompatActivity() {
             R.id.action_view_slider->{
                 intent = Intent(this, ViewPagerSlider::class.java)
                 startActivity(intent)
+            }
+            R.id.map->{
+                val toast = Toast.makeText(applicationContext, "onStart called...", Toast.LENGTH_LONG)
+                toast.show()
+                intent = Intent(this, MapsActivity::class.java)
+                startActivity(intent)
+                return true
             }
         }
         return super.onOptionsItemSelected(item)
